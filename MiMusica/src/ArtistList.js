@@ -10,14 +10,13 @@ import {Action, Actions} from 'react-native-router-flux';
 
 export default class ArtistList extends Component<Props>{
     
-    handlePress(artists){
+    handlePress(artist){
         Actions.artistDetail({ artist: artist })
     }
     render(){
-        const artists = this.props.artists;
         return(
             <FlatList
-                data = {artist}
+                data = {this.props.artists}
                 renderItem ={({item: artist}) =>(
                     <TouchableOpacity onPress={() => this.handlePress(artist)}>
                             <ArtistBox artist={artist}/>

@@ -66,6 +66,7 @@ const styles = StyleSheet.create({
         height: null,
         backgroundColor: 'white',
         alignItems: 'center',
+        //justifyContent: 'center',
     },
     logo:{
         width: 200,
@@ -73,10 +74,10 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         flexWrap: 'wrap',
         marginTop: Platform.select({
-            ios: 90,
+            ios: 200,
             android: 50
         }),
-        marginBottom: 25
+        marginBottom: 42
     },
     textInput:{
         height: 40, 

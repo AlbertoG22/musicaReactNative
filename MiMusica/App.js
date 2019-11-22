@@ -18,9 +18,8 @@ const scenes = Actions.create(
     <Scene key="home" component={HomeView} hideNavBar/>
     <Scene key="artistDetail" component={ArtistDetailView} title="Detalles" hideNavBar={false}/>
   </Scene>
-)
+);
 
-type Props = {};
 export default class App extends Component<Props> {
   render() {
     return <Router scenes={scenes}/>
